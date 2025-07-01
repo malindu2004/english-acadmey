@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://i.pinimg.com/736x/ac/3e/d7/ac3ed75c8a9722822d39435d593285d3.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .form-container {
+      background-color: rgba(0,0,0,0.6);
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+
+    .form-container a {
+      color: #ddd;
+      text-decoration: underline;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+<form onsubmit="return validateLoginForm(event)">
+...
+<input type="checkbox" onclick="togglePassword('login-password')"> Show Password
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+      <a href="register.html">Don't have an account? Register</a>
+    </form>
+  </div>
+
+</body>
+</html>

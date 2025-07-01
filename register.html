@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://i.pinimg.com/736x/ac/3e/d7/ac3ed75c8a9722822d39435d593285d3.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .form-container {
+      background-color: rgba(0,0,0,0.6);
+      width: 320px;
+      margin: 80px auto;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    .form-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+
+    .form-container a {
+      color: #ddd;
+      text-decoration: underline;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+<form onsubmit="return validateRegisterForm(event)">
+...
+<input type="checkbox" onclick="togglePassword('password')"> Show Password
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Register</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <input type="submit" value="Create Account">
+      <a href="login.html">Already have an account? Login</a>
+    </form>
+  </div>
+
+</body>
+</html>
